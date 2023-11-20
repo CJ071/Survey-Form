@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/survey.css"> 
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+
+<p id="description">Help us get to know you better</p>
+
+<form action="" id="survey-form">
+<label id="name-label"> Name<input id="name" type="text" placeholder="Enter your name" required></label>
+<label id="email-label"> Email <input id="email" type="email" placeholder="Enter your email" required></label>
+<label id="number-label"> Age(optional) <input id="number"   type="number" min="10" max="99" placeholder="Age"></label>
+<label for="dropdown">Which option best describes your current role?</label>
+<select name="dropdown" id="dropdown">
+    <option value="">Select current role</option>
+    <option value="1">Student</option>
+    <option value="2">Full Time Job</option>
+    <option value="3">Full Time Learner</option>
+    <option value="4">Other</option>
+    <option value="5">Prefer not to say</option>
+</select>
+<label for="recommend">Would you recommend our website to a friend?</label>
+<label for="Definitely"><input name="options" type="radio" class="inline" value="Definitely" checked> Definitely</label>
+<label for="Maybe"><input name="options" type="radio" class="inline" value="Maybe">Maybe</label>
+<label for="NotSure"><input name="options" type="radio" class="inline" value="NotSure">Not sure</label>
+
+<label for="Interest">What are your area of interest?</label>
+<label for="gamedev"><input class="Inline" type="checkbox" value="gamedev">Game Development</label>
+<label for="webdev"><input class="Inline" type="checkbox" value="webdev">Web Development</label>
+<label for="ML"><input class="Inline" type="checkbox" value="MachineLearning">Machine Learning</label>
+<label for="security"><input class="Inline" type="checkbox" value="CyberSecurity">Cyber Security</label>
+<label for="db"><input class="Inline" type="checkbox" value="DataBase">Database Systems</label>
+<label for="db"><input class="Inline" type="checkbox" value="Other">Other</label>
+<label for="Comments">Any comments or suggestions? <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea></label>
+<input id="submit" type="Submit">
+</form>
+</body>
+</html> 
